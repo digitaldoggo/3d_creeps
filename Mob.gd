@@ -18,7 +18,7 @@ func initialize(start_position, player_position):
 	rotate_y(randf_range(-PI / 4, PI / 4))
 	
 	# We calculate a random speed (integer)
-	var random_speed = randi_range(min_speed, max_speed)
+	var random_speed = randf_range(min_speed, max_speed)
 	# We calculate a forward velocity that represents the speed.
 	velocity = Vector3.FORWARD * random_speed
 	# We then rotate the velocity vector based on the mob's Y rotation
@@ -29,7 +29,7 @@ func initialize(start_position, player_position):
 
 
 func _on_visible_on_screen_notifier_3d_screen_exited() -> void:
-	queue_free() # Replace with function body.
+	queue_free()
 
 func squash():
 	squashed.emit()
