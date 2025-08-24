@@ -28,7 +28,7 @@ point_count = 4
 
 [sub_resource type="Theme" id="Theme_272bh"]
 default_font = ExtResource("4_lquwl")
-default_font_size = 22
+default_font_size = 40
 
 [node name="Main" type="Node"]
 script = ExtResource("1_0xm2m")
